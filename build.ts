@@ -2,7 +2,7 @@ const output = await Deno.emit("./index.ts", { bundle: "module" });
 const code = output.files["deno:///bundle.js"];
 
 await Deno.writeTextFile(
-  "index.js",
+  "index.user.js",
   `// ==UserScript==
 // @name         keicho-proxy
 // @namespace    https://scrapbox.io
