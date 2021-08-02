@@ -8,5 +8,6 @@ deno run --unstable \
 --allow-read=./index.ts \
 --allow-write=./index.js \
 --allow-net=raw.githubusercontent.com \
-build.ts
+build.ts &&
+deno fmt index.js
 ```
